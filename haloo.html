@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>202453119</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif; 
+            margin: 40px;
+        }
+
+        .container-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .kelas {
+            color: red; 
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+       .judul-kuliah {
+              text-align: right;
+             font-size: 20px;
+               font-weight: bold;
+               margin-top: 80px; 
+}
+  
+        .link-sunan {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+      
+        .list-utama {
+            list-style-type: none; 
+            padding-left: 20px;
+        }
+
+        .list-utama li::before {
+            margin-right: 10px;
+        }
+        
+      
+        .item-bakso::before { content: "ab. "; }
+        .item-soto::before { content: "ac. "; }
+        .item-mie::before { content: "ad. "; }
+
+        .sub-list {
+            list-style-type: square; 
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-header">
+        <div class="kelas">Kelas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P</div>
+        <div class="judul-kuliah">
+            Kuliah <b>Pemrograman</b><br>
+            Web
+        </div>
+    </div>
+
+    <a href="https://sunan.umk.ac.id/">SUNAN</a>
+
+    <ul class="list-utama">
+        <li class="item-bakso">bakso
+            <ul class="sub-list">
+                <li>bakso sapi</li>
+                <li>bakso ikan</li>
+            </ul>
+        </li>
+        <li class="item-soto">soto</li>
+        <li class="item-mie">mie</li>
+    </ul>
+
+</body>
+</html>
